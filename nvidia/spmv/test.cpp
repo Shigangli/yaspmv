@@ -37,8 +37,8 @@ int main(int argc, char* argv[]){
         fclose(infile_1);
         tune = 0;
     }
-    else
-        generateProgramCache<float>(&clCxt); //only support float
+//    else
+//        generateProgramCache<float>(&clCxt); //only support float
     
     yaSpMVmtx2clbccoo<float>(&clCxt,&mtx,&clbccoo,&best,tune);
     

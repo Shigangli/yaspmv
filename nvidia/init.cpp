@@ -164,7 +164,7 @@ cl_program getProgram(string source,char * build_options,clContext *clCxt)
             if(ret != CL_SUCCESS){
                 cout << "Failed to build program with source. error code:"<< ret << endl;
             }
-            savebinary(*program, filename.c_str());
+            //savebinary(*program, filename.c_str());
         }
         else
         {
@@ -283,7 +283,7 @@ cl_kernel getKernel(string source,string kernelName, vector< pair<size_t,const v
                 cout << kernelName <<"  ";
                 cout << "Failed to build program with source. error code:"<< ret << endl;
             }
-            savebinary(*program, filename.c_str());
+            //savebinary(*program, filename.c_str());
         }
         else
         {
